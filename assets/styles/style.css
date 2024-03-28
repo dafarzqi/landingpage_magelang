@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksland', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2,h3{
+    color: yellow;
+}
+
+h4{
+    color: aqua;
+}
+
+table{
+    color: white;
+}
+
+footer{
+    padding: 20px;
+    color:yellow;
+    background-color: #2D9596;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: #fc0909;
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+}
+
+
+
+
+.profil header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    max-width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px white;
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 30px;
+    background-color: #265073;
+    text-align: center;
+    color: white;
+}
+
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+
+    gap: 2rem;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav{
+    background-color: #2D9596;
+
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+}
+
+main{
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content{
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+p{
+    color: white;
+}
+
+@media screen and(max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside{
+        align-self: stretch;
+    }
+    
+}
